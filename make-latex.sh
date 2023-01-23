@@ -19,6 +19,3 @@ done
 
 pandoc -s latex/*.tex -o book_result/generated_book.tex
 pandoc -N --quiet --variable "geometry=margin=1.2in" --variable mainfont="OpenSans-Regular.ttf" --variable sansfont="OpenSans-Regular.ttf" --variable monofont="OpenSans-Regular.ttf" --variable fontsize=12pt --variable version=2.0 book_result/generated_book.tex  --pdf-engine=xelatex --toc -o book_result/generated_book.pdf
-
-
-#sed -i '' 's+Figure+Εικόνα+g' ./latex/ch0*
